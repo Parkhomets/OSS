@@ -1,0 +1,13 @@
+.:
+total 4
+drw-rw-r--. 2 gremlin gremlin 22 Sep 24 09:31 dir
+-r--r-----. 1 root    gremlin  4 Sep 24 09:38 file
+----rw-rw-. 1 gremlin gremlin  0 Sep 24 09:36 file2
+----rw-rw-. 1 gremlin gremlin  0 Sep 24 09:37 file3
+-rw-------. 1 gremlin gremlin  0 Sep 24 09:38 file4
+-rw-rw-rw-. 1 gremlin gremlin  0 Sep 24 09:39 file5
+-rw-rw-rw-. 1 gremlin gremlin  0 Sep 24 09:46 lst_dir.txt
+
+./dir:
+total 0
+-????????? ? ? ? ?            ? new_file

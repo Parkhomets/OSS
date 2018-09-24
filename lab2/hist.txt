@@ -1,0 +1,56 @@
+mkdir test
+touch file
+ls -la 
+cd test/
+touch file
+chmod 000  file
+ls -la | grep "file" | cut -d. -f1
+echo "123" >> file
+cat file
+chmod 300 file
+ls -la | grep "file" | cut -d. -f1
+chmod 200 file
+ls -la | grep "file" | cut -d. -f1
+echo "123" >> file
+cat file
+chmod 240 file
+ls -la | grep "file" | cut -d. -f1
+cat file
+chmod 340 file
+ls -la | grep "file" | cut -d. -f1
+chmod 540 file
+ls -la | grep "file" | cut -d. -f1
+chmod 640 file
+ls -la | grep "file" | cut -d. -f1
+cat file
+mkdir dir
+touch dir/new_file
+echo "file 2" >> dir/new_file 
+ls -l dir/
+chmod 664 dir/new_file 
+ls -l dir/
+chmod -x dir
+ls -la
+ls dir/
+cat dir/new_file 
+rm dir/new_file 
+chown root file 
+chgrp root file
+ls
+umask 166
+touch file4
+ls -la | grep file4 | cut -d. -f1
+umask 000
+touch file5
+ls -la | grep file5 | cut -d. -f1
+history -w
+cat file
+ls -la | grep file$ | cut -d. -f1
+ls -la | grep file$ 
+su
+ls -l | grep file$
+cat file
+echo "all right"
+ls -lR
+ls -lR >> lst_dir.txt
+sudo shutdown -h now
