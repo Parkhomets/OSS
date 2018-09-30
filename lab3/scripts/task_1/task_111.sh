@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Catalogs:"
+ls -la | grep "d[rwx\-]\{9\}\."
+echo "Regular files:"
+ls -la | grep "\-[rwx\-]\{9\}\." 
+echo "Links:"
+ls -la | grep "l[rwx\-]\{9\}\." 
+echo "Character devides:"
+ls -la | grep "c[rwx\-]\{9\}\." 
+echo "Block devices:"
+ls -la | grep "b[rwx\-]\{9\}\." 
