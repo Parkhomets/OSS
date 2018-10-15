@@ -1,5 +1,5 @@
 #!/bin/bash
-cat $(ls ~/ | grep "\.txt") > /tmp/big.txt
+cat $(find ~/ -maxdepth 1 -type f | grep "\.txt") > /tmp/big.txt
 echo "Contains:"
 ls ~/ | grep "\.txt"
 echo "Strings:"
