@@ -1,0 +1,15 @@
+1	ldd /bin/ls | grep selinux
+2	ls -l /etc/selinux/
+3	ls -l /etc/selinux/targeted/
+4	ls -Z /etc
+5	ps Zaux
+6	ps Zaux | grep ' passwd'
+7	netstat -Ztulpen
+8	sestatus
+9	getenforce
+10	cat /sys/fs/selinux/enforce
+11	getsebool -a | grep httpd
+12	seinfo
+13	seinfo -cfile -x
+14	cat /etc/selinux/targeted/contexts/files/file_contexts.homedirs
+15	semanage fcontext -l
